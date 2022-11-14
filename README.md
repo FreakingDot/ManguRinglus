@@ -1,4 +1,4 @@
-#MänguRinglus
+# MänguRinglus
 
 ## Kirjeldus
 Meie projektiks on lauamängu ostu/müügi ja vahetus keskkond.
@@ -10,10 +10,10 @@ Kõik (koosolekul):
 * Kohtume tiimiga #3 
 * Tervitame uut tiimiliiket #8 
 * Koostame esimese nädala issue'd #6 
-* Jagame tööd nädalateks #
+* Jagame tööd nädalateks #7
 * Jagame esimese nädala issue'd tiimiliikmete vahel #10
 * Täidame readme fail #5
-* Raport wikisse 
+* Raport wikisse #11
 
 Eva:
 * Tutvun erinevate platvormidega (Figma, flaticon jne)
@@ -22,10 +22,12 @@ Marliese:
 * Tutvun erinevate platvormidega (Figma, flaticon jne)
 
 Mirjam:
-* Tutvun WebStorm-iga
+* Tutvun WebStorm-iga #19
+* Teen firebase projekti ja firestore database'i #15
 
 Karol:
 * Tutvun WebStorm-iga
+* Teen gitlabi baasfailid #22
 
 ### 2. nädal
 * Kohtume tiimiga
@@ -54,7 +56,7 @@ Vahelehed (HTML, CSS, JavaScript):
 * minu soovid
 * minu pakkumised
 * minu profiil
-* muuda profiili
+* muuda minu profiili
 * mängu profiil 
 * soovi lisamine
 * pakkumise lisamine
@@ -70,9 +72,12 @@ Muu/varia:
 * Veebilehe reeglite koostamine
 
 # Lingid:
-## Prototüüp
+
+Prototüüp:
 https://whimsical.com/lauamang-3tLUTetD6g4H1LFwg7r3uT
-## Notion, dokumentatsioon projektist
+
+Notion, dokumentatsioon projektist:
 https://fire-activity-5d4.notion.site/M-ngu-Ring-427af190c132414195d00b2feebbe40c
-## Slaidid
+
+Slaidid:
 https://docs.google.com/presentation/d/1lJKdf2DEWcIAtETVHt1lhAiHT152j8sK9hTjZq910RI/edit?usp=sharing
