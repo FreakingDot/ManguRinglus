@@ -6,13 +6,14 @@ Meie projektiks on lauamängu ostu/müügi ja vahetus keskkond.
 ## Sprindid
 ### 1. nädal
 
-Kõik (koosolekul):
+Kõik (koosolekul 14.11):
 * Kohtume tiimiga #3 
 * Tervitame uut tiimiliiket #8 
 * Koostame esimese nädala issue'd #6 
-* Jagame tööd nädalateks #7
 * Jagame esimese nädala issue'd tiimiliikmete vahel #10
 * Täidame readme fail #5
+
+Kõik (koosolekul):
 * Raport wikisse #11
 
 Eva:
