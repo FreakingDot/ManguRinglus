@@ -16,17 +16,17 @@ Kõik (koosolekul):
 * Raport wikisse #11
 
 Eva:
-* Tutvun erinevate platvormidega (Figma, flaticon jne)
+* Tutvun erinevate platvormidega (Figma, flaticon jne) #18
 
 Marliese:
-* Tutvun erinevate platvormidega (Figma, flaticon jne)
+* Tutvun erinevate platvormidega (Figma, flaticon jne) #17
 
 Mirjam:
 * Tutvun WebStorm-iga #19
 * Teen firebase projekti ja firestore database'i #15
 
 Karol:
-* Tutvun WebStorm-iga
+* Tutvun WebStorm-iga #16
 * Teen gitlabi baasfailid #22
 
 ### 2. nädal
