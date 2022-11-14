@@ -1,4 +1,4 @@
-#MänguRinglus
+# MänguRinglus
 
 ## Kirjeldus
 Meie projektiks on lauamängu ostu/müügi ja vahetus keskkond.
