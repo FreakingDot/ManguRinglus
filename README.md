@@ -69,7 +69,7 @@ Muu/varia:
 * Mängu andmete kogumine (umbes 25 tk)
 * Veebilehe reeglite koostamine
 
-#Lingid:
+# Lingid:
 ## Prototüüp
 https://whimsical.com/lauamang-3tLUTetD6g4H1LFwg7r3uT
 ## Notion, dokumentatsioon projektist
