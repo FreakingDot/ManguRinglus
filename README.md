@@ -47,6 +47,7 @@ Karol:
 * Minu soovid lehe koodimine #37
 * Minu pakkumised lehe koodimine #38
 * Veebilehed üle laadida github-i, et saaks seda esitada. #41
+* Avalehe koostamine - koodimine #42
 
 Kõik:
 * Kohtume tiimiga #30
@@ -110,7 +111,7 @@ Database:
 * Firestore database
 
 Muu/varia:
-* Mängu andmete kogumine (umbes 25 tk)
+* Mängu andmete kogumine (umbes 25tk lehe kohta)
 * Veebilehe reeglite koostamine
 
 Tehtud
