@@ -31,22 +31,33 @@ Karol:
 * Teen gitlabi baasfailid #22
 
 ### 2. nädal
-* Kohtume tiimiga
-* Koostame teise nädala issued
-* Raport wikisse 
+* Kohtume tiimiga #30
+* Vestlus abiõppejõuga #30
+* Koostame teise nädala issued #30
+* Navigatsioonirida #31
+* Navigatsioonirea disain #32
+* Style Guide #23
+* Avalehe kujundus figmas #21
+* Pakkumises olevad mängud koodimine #33
+* Soovitud olevad mängud koodimine #34
+* Veebilehe linkimine firebasiga #35
+* Mänguandmete kogumine #24
+* Raport wikisse #12
 
 ### 3. nädal
 * Kohtume tiimiga
+* Vestlus abiõppejõuga
 * Koostame kolmanda nädala issued
-* Raport wikisse 
+* Raport wikisse
+
 ### 4. nädal
 * Kohtume tiimiga
+* Vestlus abiõppejõuga
 * Koostame neljanda nädala issued
 * Raport wikisse 
 
 ### mida on vaja teha?
 Disain:
-* logo
 * style guide (font, ikoonid, nupud, värvid jne)
 * figmas stiliseeritud wireframe
 
@@ -71,6 +82,9 @@ Database:
 Muu/varia:
 * Mängu andmete kogumine (umbes 25 tk)
 * Veebilehe reeglite koostamine
+
+Tehtud
+* ~logo~
 
 # Lingid:
 
