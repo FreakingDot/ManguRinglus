@@ -46,22 +46,22 @@ Karol:
 * Ühe mängu vaade #39
 * Minu soovid lehe koodimine #37
 * Minu pakkumised lehe koodimine #38
+* Veebilehed üle laadida github-i, et saaks seda esitada. #41
 
 Kõik:
 * Kohtume tiimiga #30
 * Koostame teise nädala issued #30
-
 
 Kõik + abiõppejõud Sven:
 * Vestlus abiõppejõuga #30
 
 Eva:
 * Mänguandmete kogumine #24
-
+* Style Guide #23
 
 Marliese:
 * Mänguandmete kogumine #24
-
+* Style Guide #23
 
 Mirjam:
 * Navigatsioonirida #31
@@ -71,6 +71,8 @@ Mirjam:
 Karol:
 * Minu soovid lehe koodimine #37
 * Minu pakkumised lehe koodimine #38
+* Veebilehed üle laadida github-i, et saaks seda esitada. #41
+
 
 ### 3. nädal
 * Kohtume tiimiga
