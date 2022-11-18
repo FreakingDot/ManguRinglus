@@ -43,6 +43,34 @@ Karol:
 * Veebilehe linkimine firebasiga #35
 * Mänguandmete kogumine #24
 * Raport wikisse #12
+* Ühe mängu vaade #39
+* Minu soovid lehe koodimine #37
+* Minu pakkumised lehe koodimine #38
+
+Kõik:
+* Kohtume tiimiga #30
+* Koostame teise nädala issued #30
+
+
+Kõik + abiõppejõud Sven:
+* Vestlus abiõppejõuga #30
+
+Eva:
+* Mänguandmete kogumine #24
+
+
+Marliese:
+* Mänguandmete kogumine #24
+
+
+Mirjam:
+* Navigatsioonirida #31
+* Pakkumises olevad mängud koodimine #33
+* Soovitud olevad mängud koodimine #34
+
+Karol:
+* Minu soovid lehe koodimine #37
+* Minu pakkumised lehe koodimine #38
 
 ### 3. nädal
 * Kohtume tiimiga
