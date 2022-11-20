@@ -1,1 +1,45 @@
 /* Stiililehe algus */
+
+/* minuPakkumised.html */
+.MinuPakkumineInner{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-height: 20em;
+}
+
+.MinuPakkumisedConteiner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.minuTag{
+    background: aqua;
+    width: max-content;
+    margin-left: 1%;
+    padding-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 35px;
+
+}
+
+.minuTags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.minuMangPilt{
+    width: 100%;
+    height: auto;
+    min-width: 15em;
+    max-width: 20em;
+}
+
+.minuPakkumine {
+    max-height: 20em;
+}
