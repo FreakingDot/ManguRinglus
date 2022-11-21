@@ -2,6 +2,7 @@
 
 ## Kirjeldus
 Meie projektiks on lauamängu ostu/müügi ja vahetus keskkond.
+link: https://ktormi.pages.taltech.ee/iti0105-2022/
 
 ## Sprindid
 ### 1. nädal
