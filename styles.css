@@ -1,5 +1,62 @@
 /* Stiililehe algus */
 
+/* Navigation */
+#mainLogo{
+    object-fit: cover;
+    width: 22em;
+    height: 4em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #F4D06F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.groupOfButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbuttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2em;
+}
+.navbuttons button{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    color: white;
+    border-radius: 0.5em;
+    border: 0;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 12em;
+}
+.mainPrimary{
+    background-color: #392F5A;
+}
+.secondPrimary{
+    background-color: #7B7491;
+}
+.chatIcon{
+    height: 4em;
+}
+.profileIcon{
+    height: 4em;
+}
+.navIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    margin: 1em;
+}
+
+
 /* minuPakkumised.html */
 .MinuPakkumineInner{
     display: flex;
