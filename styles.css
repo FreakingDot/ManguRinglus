@@ -1,5 +1,25 @@
 /* Stiililehe algus */
 
+/* All pages */
+body{
+    background: #FFF8F0;
+    padding-top: 11em; /*So that navbar doesnt overlap the content*/
+}
+h1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 36px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+}
+
 /* Navigation */
 #mainLogo{
     object-fit: cover;
@@ -12,8 +32,9 @@
     overflow: hidden;
     background-color: #F4D06F;
     position: fixed;
-    top: 0;
-    left: 0;
+    /* position: inherit;*/
+    top: 0px;
+    left: 0px;
     width: 100%;
 }
 .groupOfButtons{
@@ -72,20 +93,18 @@
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    border: solid;
+    border: solid #9DD9D2 0.5em;
     padding: 1%;
 }
-
 .minuTag{
-    background: aqua;
     width: max-content;
     padding-top: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1em;
+    padding-right: 1em;
     border-radius: 25px;
     white-space: nowrap;
     margin: 0.1em;
-
+    font-family: "Roboto Mono", monospace;
 }
 
 .minuTags {
@@ -93,14 +112,35 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 2em;
 }
 
+.Liik {
+    background-color: #9DD9D2;
+    color: black;
+}
+
+.Vanus {
+    background-color: #7B7491;
+    color: white;
+
+}
+.Arv {
+    background-color: #FF8811;
+    color: white;
+}
+
+.Muu {
+    background-color: white;
+    color: white;
+
+}
 .minuMangPilt{
     width: 18em;
     margin-right: 2%;
 }
 
-img {
+.PakkumisedImg {
     width: 100%;
     height: auto;
 }
@@ -125,6 +165,7 @@ img {
     max-height: 9em;
     overflow-y: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 0.5em;
     /* white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -140,8 +181,56 @@ img {
 
 .teadePakkumine {
     white-space: nowrap;
-
+    margin: 1em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    border: none;
+    background-color: #BDBAC8;
+    font-size: 20px;
+    border-radius: 0.5em;
+    width: 15em;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
 }
+
+.New{
+    background-color: #F4D06F;
+}
+
 .muudaKuuludust{
     white-space: nowrap;
+    border: none;
+    color:white;
+    background-color: #7B7491;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+}
+
+.addButton {
+    background-color: #FF8811;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    border-radius: 70%;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+.addButtonDiv {
+    margin-left: auto;
+    display: flex;
+    position: sticky;
+    bottom: 1em;
+    margin-right: 3%;
+    justify-content: flex-end;
+
 }
