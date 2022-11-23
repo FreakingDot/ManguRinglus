@@ -101,7 +101,33 @@
 }
 .status {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 2em;
+}
+.searchDiv{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+.searchBar{
+    font-family: 'Roboto Mono', monospace;
+    max-width: 40em;
+    min-width: 60%;
+    padding: 0.8em;
+    background-color: #edf0ee;
+    border-width: 0;
+    border-radius: 1em;
+}
+.searchIcon{
+    width: 1em;
+    height: 1em;
+}
+.filtersDropdown{
+    background-color: #edf0ee;
+    border-width: 0;
+    border-radius: 1em;
+    padding: 0.8em;
+    margin-left: 1em;
 }
