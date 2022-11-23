@@ -28,6 +28,7 @@ p {
     margin-top: 1em;
     margin-left: 0.5em;
 }
+
 .navbar {
     overflow: hidden;
     background-color: #F4D06F;
@@ -77,8 +78,56 @@ p {
 .icons{
     margin: 1em;
 }
-
-
+.listingsOuter{
+    margin-top: 10em;
+    background-color: #e0e0e0;
+}
+.listingsInner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+.listing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #edf0ee;
+    padding: 1em;
+    width: 15em;
+    margin: 1em;
+    position: relative;
+}
+.listing h1{
+    font-size: 1.2em;
+}
+.listing p{
+    font-size: 0.8em;
+}
+.listingImage{
+    width: 15em;
+}
+.listingText{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    width: 100%;
+}
+.listingTags{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag{
+    background-color: #F4D06F;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+.status {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2em;
+}
 /* minuPakkumised.html */
 .MinuPakkumineInner{
     display: flex;
@@ -159,8 +208,6 @@ p {
     margin-right: 3%;
     display: flex;
     flex-direction: column;
-}
-.minuKirjeldusTekst {
 }
 
 .minuKirjeldusTekstConteiner{
