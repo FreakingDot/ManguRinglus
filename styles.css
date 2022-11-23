@@ -3,7 +3,7 @@
 /* All pages */
 body{
     background: #FFF8F0;
-    padding-top: 11em; /*So that navbar doesnt overlap the content*/
+    padding-top: 10em; /*So that navbar doesnt overlap the content*/
 }
 h1 {
     font-family: "Roboto Mono", monospace;
@@ -79,7 +79,6 @@ p {
     margin: 1em;
 }
 .listingsOuter{
-    margin-top: 10em;
     background-color: #e0e0e0;
 }
 .listingsInner{
