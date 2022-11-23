@@ -147,8 +147,8 @@ p {
 
 .minuPakkumine {
     max-height: 20%;
-    /* border: solid;*/
     margin-bottom: 2%;
+    padding-bottom: 1em;
 }
 
 .minuKirjeldus {
@@ -197,6 +197,11 @@ p {
 
 .New{
     background-color: #F4D06F;
+}
+
+.Busy {
+    background-color: #F01C1C;
+    color:white;
 }
 
 .muudaKuuludust{
