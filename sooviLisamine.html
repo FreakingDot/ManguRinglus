@@ -10,32 +10,36 @@
     <link rel="script" href="script.js">
     <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
 </head>
-<body>
+<body style="padding-top: 0">
 <!-- Siia tuleb vorm, millega saab lisada mängu. -->
-    <h2>Soovi lisamine</h2>
-    <div> <!-- Div for image -->
-        <img class="PakkumisedImg" src="https://i.imgur.com/aBO0qRe.png" alt="Insert IMAGE here">
-    </div>
+    <div class="sooviLisamineConteiner">
+        <h2>Soovi lisamine</h2>
 
-    <div>
-    <label>Mängu pealkiri
-        <input type="text" name="Pealkiri">
-    </label>
-    <label>Mängu kirjeldus
-        <input type="text" name="Kirjeldus">
-    </label>
-    <label>Enda kommentaar
-    <input type="text" name="Kommentaar">
-    </label>
-    </div>
+        <div class="MinuSoovInner" style="margin-top: 2em">
+            <div class="minuMangPilt" style="width: 100%; max-width: 18em"> <!-- Div for image -->
+                <img class="PakkumisedImg" src="https://i.imgur.com/aBO0qRe.png" alt="Insert IMAGE here">
+                <div>
+            <button class="nuppLaePilt">Lae pilt mängust</button>
+                </div>
+            </div>
 
-    <div>
-        <button class="nuppLaePilt">Lae pilt mängust</button>
-    </div>
+            <div class="sooviLisamineKirjeldus">
+                <label>Mängu pealkiri
+                    <input class="mänguPealkiriInput" type="text" name="Pealkiri">
+                </label>
+                <label>Mängu kirjeldus
+                    <textarea class="mänguKirjeldusInput" name="Kirjeldus" rows="5" cols="30"></textarea>
+                </label>
+                <label>Enda kommentaar
+                    <textarea class="mänguPealkiriInput" name="Kommentaar" rows="5" cols="30"></textarea>
+                </label>
+            </div>
+        </div>
 
-    <div>
-        <button class="nuppTühista">Tühista</button>
-        <button class="nuppLisa">Lisa</button>
+        <div class="sooviLisamineNupud">
+            <button class="nuppTühista">Tühista</button>
+            <button class="nuppLisa">Lisa</button>
+        </div>
     </div>
 </body>
 </html>
