@@ -401,3 +401,51 @@ p {
     padding: 1%;
     position: relative;
 }
+
+/*SooviLisamine.html*/
+.nuppLisa {
+    white-space: nowrap;
+    border: none;
+    color:black;
+    background-color: #9DD9D2;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.nuppTühista {
+    white-space: nowrap;
+    border: none;
+    color:black;
+    background-color: #BDBAC8;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.nuppLaePilt {
+    white-space: nowrap;
+    border: none;
+    color:white;
+    background-color: #7B7491;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+label {
+    font-family: "Roboto Mono", monospace;
+    font-size: 24px;
+}
