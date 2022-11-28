@@ -1,32 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pakkumise lisamine</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="script" href="script.js">
-  <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
+    <meta charset="UTF-8">
+    <title>Lisa pakkumine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+    <link rel="shortcut icon" type="image/svg" href="pictures/logo_tab.svg">
 </head>
 <body>
 <!-- Siia tuleb vorm, mille ära täitmisel lisandub uus pakkumine. -->
-<form>
-  <label for="mängu pealkiri">Mängu pealkiri:</label><br>
-  <input type="text" name="Mängu pealkiri"><br>
-  <label for="mängu kirjeldus">Mängu kirjeldus:</label><br>
-  <input type="textarea" name="Mängu kirjeldus"><br>
-  <label for="enda kommentaar">Enda kommentaar:</label><br>
-  <input type="textarea" name="Enda kommentaar"><br>
-  <input type="checkbox" name="Müün" value="Müün" checked> Müün <br>
-  <input type="text" name="Hind"><br>
-  <input type="checkbox" name="Vahetan" value=Vahetan"> Vahetan <br>
-  <input type="checkbox" name="Tasuta" value="Tasuta"> Tasuta <br>
-  <input type="submit" name="Lisa" value="Lisa">
-  <!-- Lihtsalt mingi suvaline tekst -->
-</form>
-<form><br>
-</form>
+<div id="lisapakkumine_image_insertboxes">
+    <div></div>
+    <h1>Pakkumise lisamine</h1>
+</div>
+<!-- Siia tuleb mängu pilt ja kirjelduse vormid. -->
+<div id="lisapakkumine_image_insertboxes">
+    <div></div>
+    <div>
+        <img class="lisapakkumineImg" src="https://i.imgur.com/aBO0qRe.png">
+        <div class="text-center">
+            <button class="lisapakkumineButton">Lae pilt mängust</button>
+        </div>
+    </div>
+    <form>
+        <label for="mängu pealkiri"><h3>Mängu pealkiri:</h3></label>
+        <textarea name="textarea" rows="1" cols="60"></textarea>
+        <label for="mängu kirjeldus"><h3>Mängu kirjeldus:</h3></label>
+        <textarea name="textarea" rows="5" cols="60">Kirjelda mängu...</textarea>
+        <label for="enda kommentaar"><h3>Enda kommentaar:</h3></label><br>
+        <textarea name="textarea" rows="5" cols="60">Kirjelda mängu seisukorda...</textarea>
+    </form>
+</div>
+<!-- Siia tulevad tigimused(Müün, Vahetan..) ja filtrite tag-id. -->
+<div id="lisapakkumine_image_insertboxes">
+    <div></div>
+    <div>
+        <h3>Tingimused:</h3>
+        <form>
+            <p>
+                <input type="checkbox" name="Müün" value="Müün" checked> Müün <br>
+            <p< Hind </p> <input type="text" name="Hind"> <br>
+            <input type="checkbox" name="Vahetan" value=Vahetan"> Vahetan <br>
+            <input type="checkbox" name="Tasuta" value="Tasuta"> Tasuta <br>
+            </p>
+        </form>
+    </div>
+    <div>
+        <h3>Filtrite lisamine:</h3>
+        <p> Mängu liik </p>
+        <div class="minuTags"> <!-- tags -->
+            <div class="minuTag Liik">
+                <span>Lauamäng</span>
+            </div>
+            <div class="minuTag Liik">
+                <span>Kaardimäng</span>
+            </div>
+            <div class="minuTag Liik">
+                <span>Videomäng</span><br>
+            </div>
+        </div>
+        <p> Vanusepiirang </p>
+        <div class="minuTags">
+            <div class="minuTag Vanus">
+                <span>3+</span>
+            </div>
+            <div class="minuTag Vanus">
+                <span>6+</span>
+            </div>
+            <div class="minuTag Vanus">
+                <span>10+</span>
+            </div>
+            <div class="minuTag Vanus">
+                <span>18+</span>
+            </div>
+        </div>
+        <p> Mängijate arv</p>
+        <div class="minuTags">
+            <div class="minuTag Arv">
+                <span>1 mängija</span>
+            </div>
+            <div class="minuTag Arv">
+                <span>1-2 mängijat</span>
+            </div>
+            <div class="minuTag Arv">
+                <span>2-4 mängijat</span>
+            </div>
+            <div class="minuTag Arv">
+                <span>1-4 mängijat</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="lisapakkumine_image_insertboxes">
+    <div></div>
+    <div></div>
+    <div>
+        <div class="lisapakkumineNupud>"
+        <div>
+            <div class="text-center">
+            <button class="lisapakkumine_lisa">Lisa</button>
+            </div>
+        </div>
+        <div>
+            <div class="text-center">
+            <button class="lisapakkumine_tyhista">Tühista</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 </body>
 </html
