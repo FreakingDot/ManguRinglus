@@ -454,7 +454,8 @@ p {
     border-radius: 0.5em;
     cursor: pointer;
     width: 100%;
-    max-width: 18em;
+    max-width: 25em;
+    position: relative;
     alignment: center;
 
 }
