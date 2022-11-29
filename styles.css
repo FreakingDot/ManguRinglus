@@ -88,6 +88,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 1em;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #9DD9D2;
 }
 /* One listing */
 .listing{
