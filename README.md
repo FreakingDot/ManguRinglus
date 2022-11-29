@@ -53,6 +53,7 @@ Karol:
 Kõik:
 * Kohtume tiimiga #30
 * Koostame teise nädala issued #30
+* Demo kaitsmine #51
 
 Kõik + abiõppejõud Sven:
 * Vestlus abiõppejõuga #30
@@ -60,6 +61,7 @@ Kõik + abiõppejõud Sven:
 Eva:
 * Mänguandmete kogumine #24
 * Style Guide #23
+* Raport wikisse #12
 
 Marliese:
 * Mänguandmete kogumine #24
@@ -77,10 +79,53 @@ Karol:
 
 
 ### 3. nädal
-* Kohtume tiimiga
-* Vestlus abiõppejõuga
-* Koostame kolmanda nädala issued
-* Raport wikisse
+* Kohtume tiimiga #47
+* Vestlus abiõppejõuga #40
+* Koostame kolmanda nädala issued #47
+* Veebilehe linkimine Firebase-iga #35
+* "Mängu profiili" veebilehe tegemine #39
+* "Avalehe" veebilehe tegemine #42
+* Saadaval lehe kooskõlastamine disainiga #48
+* Soovitud lehe kooskõlastamine disainiga #49
+* Mängu andmete sisestamine firebase #50
+* Soovi lisamise vormi koodimine #52
+* Pakkumise lisamise vormi koodimine #53
+* Viimased teated koodimine #54
+* "Minu soovid" parandus #55
+* "Minu pakkumised" parandus #56
+* Raport wikisse #13
+
+Kõik:
+* Kohtume tiimiga #47
+* Vestlus abiõppejõuga #40
+* Koostame kolmanda nädala issued #47
+
+Eva:
+* Soovi lisamise vormi koodimine #52
+* Pakkumise lisamise vormi koodimine #53
+
+Marliese:
+* Mängu andmete sisestamine firebase #50
+* Soovi lisamise vormi koodimine #52
+* Pakkumise lisamise vormi koodimine #53
+
+Mirjam:
+* Veebilehe linkimine Firebase-iga #35
+* Saadaval lehe kooskõlastamine disainiga #48
+* Soovitud lehe kooskõlastamine disainiga #49
+* "Mängu profiili" veebilehe tegemine #39
+* "Avalehe" veebilehe tegemine #42
+* Viimased teated koodimine #54
+
+
+Karol:
+* Veebilehe linkimine Firebase-iga #35
+* Viimased teated koodimine #54
+* "Avalehe" veebilehe tegemine #42
+* "Mängu profiili" veebilehe tegemine #39
+* "Minu soovid" parandus #55
+* "Minu pakkumised" parandus #56
+
 
 ### 4. nädal
 * Kohtume tiimiga
@@ -89,9 +134,6 @@ Karol:
 * Raport wikisse 
 
 ### mida on vaja teha?
-Disain:
-* style guide (font, ikoonid, nupud, värvid jne)
-* figmas stiliseeritud wireframe
 
 Vahelehed (HTML, CSS, JavaScript):
 * avaleht
@@ -112,15 +154,20 @@ Database:
 * Firestore database
 
 Muu/varia:
-* Mängu andmete kogumine (umbes 25tk lehe kohta)
 * Veebilehe reeglite koostamine
 
 Tehtud
 * ~logo~
+* ~style guide (font, ikoonid, nupud, värvid jne)~
+* ~figmas stiliseeritud wireframe~
+* ~Mängu andmete kogumine (umbes 25tk lehe kohta)~
 
 # Lingid:
 
 Prototüüp:
+https://www.figma.com/file/Tr4xUOQIe4wRZpOZjuImC9/DESIGN?node-id=7%3A2&t=iyYYTa4AN96XMZMr-0
+
+Wireframe:
 https://whimsical.com/lauamang-3tLUTetD6g4H1LFwg7r3uT
 
 Notion, dokumentatsioon projektist:
