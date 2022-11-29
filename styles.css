@@ -168,7 +168,7 @@ p {
     position: relative;
 }
 
-.MinuPakkumisedConteiner{
+#MinuPakkumisedConteiner{
     width: 90%;
     display: flex;
     justify-content: center;
