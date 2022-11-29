@@ -1,9 +1,4 @@
-// Scripti algus
-
-//firbase jama
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-
+// Script
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -16,17 +11,13 @@ const firebaseConfig = {
     measurementId: "G-Q88BY8F2X9"
 };
 
-console.log("Firebase, lets goooo")
-
 firebase.initializeApp(firebaseConfig);
 const database = firebase.firestore();
 
 // lisa kõik pakkumised "Minu pakkumised"
 
-const minuPakkumisedHTMLConteiner = document.getElementById("MinuPakkumisedConteiner");
 
 loadPakkumised();
-const pakkumised = [];
 
 function loadPakkumised(){
     database.collection("pakutavadmängud")
