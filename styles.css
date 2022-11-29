@@ -78,6 +78,8 @@ p {
 .icons{
     margin: 1em;
 }
+
+/* All listings */
 .listingsOuter{
 
 }
@@ -87,6 +89,7 @@ p {
     justify-content: space-evenly;
     margin: 1em;
 }
+/* One listing */
 .listing{
     display: flex;
     flex-direction: column;
@@ -95,6 +98,12 @@ p {
     width: 15em;
     margin: 1em;
     position: relative;
+}
+.status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
 }
 .listing h1{
     font-size: 1.2em;
@@ -113,6 +122,8 @@ p {
 .listingHeading{
     font-weight: normal;
 }
+
+/* Listing tags */
 .listingTags{
     display: flex;
     flex-wrap: wrap;
@@ -136,12 +147,8 @@ p {
     background-color: #FF8811;
     color: white;
 }
-.status {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2em;
-}
+
+/* Search bar and filters */
 .searchDiv{
     display: flex;
     justify-content: center;
