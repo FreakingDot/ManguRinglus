@@ -79,8 +79,7 @@ p {
     margin: 1em;
 }
 .listingsOuter{
-    margin-top: 10em;
-    background-color: #e0e0e0;
+
 }
 .listingsInner{
     display: flex;
@@ -92,7 +91,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #edf0ee;
     padding: 1em;
     width: 15em;
     margin: 1em;
@@ -112,6 +110,9 @@ p {
     font-size: 1em;
     width: 100%;
 }
+.listingHeading{
+    font-weight: normal;
+}
 .listingTags{
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +122,19 @@ p {
     border-radius: 1em;
     padding: 0.5em;
     margin-right: 0.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+.tagType1 p{
+    background-color: #9DD9D2;
+}
+.tagType2 p{
+    background-color: #7B7491;
+    color: white;
+}
+.tagType3 p{
+    background-color: #FF8811;
+    color: white;
 }
 .status {
     position: absolute;
@@ -129,27 +143,27 @@ p {
     width: 2em;
 }
 .searchDiv{
-
     display: flex;
     justify-content: center;
-    padding-top: 2em;
+
 }
 .searchBar{
     font-family: 'Roboto Mono', monospace;
     max-width: 40em;
     min-width: 60%;
     padding: 0.8em;
-    background-color: #edf0ee;
-    border-width: 0;
+    background-color: #BDBAC8;
+    color: #392F5A;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 1em;
 }
-.searchIcon{
-    width: 1em;
-    height: 1em;
-}
 .filtersDropdown{
-    background-color: #edf0ee;
-    border-width: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #BDBAC8;
+    color: #392F5A;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 1em;
     padding: 0.8em;
     margin-left: 1em;
