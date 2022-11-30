@@ -7,8 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.js">
+    <script type="module" src="saadaval.js"></script>
     <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
 </head>
 <body>
 <!-- Siia tulevad meie saadaval oleval mängude nimekiri -->
@@ -44,105 +49,10 @@
                 <option value="kaardimäng">Kaardimäng</option>
                 <option value="pusle">Pusle</option>
             </select>
-
         </div>
-        <div class="listingsInner">
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="listing">
-                <img class="status" src="https://i.imgur.com/mYhqhCX.png">
-                <img class="listingImage" src="https://i.imgur.com/wtI9Kf2.png">
-                <div class="listingText">
-                    <h1 class="listingHeading">Mängu pealkiri</h1>
-                    <div class="listingTags">
-                        <div class="tagType1"><p class="tag">Tag1111111111</p></div>
-                        <div class="tagType2"><p class="tag">Tag2222</p></div>
-                        <div class="tagType3"><p class="tag">Tag3333333</p></div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="listingsInner" id="allListingsDiv">
+            
         </div>
     </div>
 </body>
