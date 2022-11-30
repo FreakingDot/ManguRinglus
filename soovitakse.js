@@ -52,6 +52,6 @@ function looSoovitakseListing(dokument, pealkiri, kirjeldus, pilt, tagid){
     listingHeadingHTML.innerHTML=pealkiri;
     listingTextDivHTML.appendChild(listingHeadingHTML)
 
-    const allListingsDiv = document.getElementById("allListingsDiv")
+    const allListingsDiv = document.getElementById("soovitakseAllListingsDiv")
     allListingsDiv.appendChild(listingDivHTML)
 }
