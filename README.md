@@ -94,6 +94,7 @@ Karol:
 * "Minu soovid" parandus #55
 * "Minu pakkumised" parandus #56
 * Raport wikisse #13
+* "Minu soovid" lisamise funktsionaalsus #57
 
 Kõik:
 * Kohtume tiimiga #47
@@ -125,6 +126,7 @@ Karol:
 * "Mängu profiili" veebilehe tegemine #39
 * "Minu soovid" parandus #55
 * "Minu pakkumised" parandus #56
+* "Minu soovid" lisamise funktsionaalsus #57
 
 
 ### 4. nädal
