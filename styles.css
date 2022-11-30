@@ -189,11 +189,11 @@ p {
     align-items: center;
     flex-direction: row;
     max-height: 20em;
-    padding: 1%;
+    padding: 2%;
     position: relative;
 }
 
-.MinuPakkumisedConteiner{
+#MinuPakkumisedConteiner{
     width: 90%;
     display: flex;
     justify-content: center;
@@ -242,8 +242,9 @@ p {
 
 }
 .minuMangPilt{
-    width: 18em;
+    width: 17em;
     margin-right: 2%;
+    max-height: 20em;
 }
 
 .PakkumisedImg {
@@ -251,7 +252,7 @@ p {
     height: auto;
 }
 
-.minuSoov {
+#minuSoov {
     max-height: 20%;
     margin-bottom: 2%;
     padding-bottom: 1em;
@@ -347,7 +348,7 @@ p {
 }
 
 /*minuSoovid.html*/
-.MinuSoovidConteiner{
+#MinuSoovidConteiner{
     width: 90%;
     display: flex;
     justify-content: center;
@@ -383,11 +384,10 @@ p {
     background-color: #F4D06F;
 }
 
-.minuSoov {
+#minuSoov {
     max-height: 20%;
     margin-bottom: 2%;
     padding-bottom: 1em;
-
 }
 
 .addButtonSoov {
@@ -428,7 +428,7 @@ p {
     align-items: center;
     flex-direction: row;
     max-height: 20em;
-    padding: 1%;
+    padding: 2%;
     position: relative;
 }
 
@@ -462,7 +462,7 @@ p {
     grid-gap: 30px 20px;
 }
 
-#lisapakkumine_image_insertboxes{
+.lisapakkumine_image_insertboxes{
     display: grid;
     grid-template-columns: 5% 35% 55% 5%;
     grid-gap: 500px 80px
@@ -628,7 +628,7 @@ label {
     margin-left: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .sooviLisamineKirjeldus {
