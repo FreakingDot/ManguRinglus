@@ -130,30 +130,53 @@ Karol:
 
 
 ### 4. nädal
-* Kohtume tiimiga
+* Kohtume tiimiga #58
 * Vestlus abiõppejõuga
-* Koostame neljanda nädala issued
-* Raport wikisse 
+* Koostame neljanda nädala issued #58
+* Raport wikisse #14
+* Pakutava mängu profiili koodimine #39
+* Soovitava mängu profiili koodimine #59
+* "Viimased teated" koodimine #54
+* Avalehe parandus #61
+* Otsinguriba funktsionaalsuse lisamine #60
+* "Minu profiil" lehe koodmine  #63
+* "Minu pakkumised" lehele pakkumise lisamise funktsiooni lisamine #64
+* Mänguprofiili jaoks andmete saamine Firebase-st #65
+* Tagide järgi filtreerimine #66
+
+Kõik:
+* Kohtume tiimiga #58
+* Vestlus abiõppejõuga
+* Koostame neljanda nädala issued #58
+* Raport wikisse #14
+
+Eva:
+* "Viimased teated" koodimine #54
+* "Minu profiil" lehe koodmine  #63
+
+Marliese:
+* Pakutava mängu profiili koodimine #39
+* Soovitava mängu profiili koodimine #59
+
+Mirjam:
+* Avalehe parandus #61
+* Otsinguriba funktsionaalsuse lisamine #60
+* Tagide järgi filtreerimine #66
+
+Karol:
+* "Minu pakkumised" lehele pakkumise lisamise funktsiooni lisamine #64
+* Mänguprofiili jaoks andmete saamine Firebase-st #65
+
 
 ### mida on vaja teha?
 
 Vahelehed (HTML, CSS, JavaScript):
 * avaleht
-* saadaval
-* soovitakse
-* minu soovid
-* minu pakkumised
 * minu profiil
 * muuda minu profiili
 * mängu profiil 
-* soovi lisamine
-* pakkumise lisamine
 * "vestlus/pakkumise tegemine/vahetuse kinnitamine"
 * "viimased teated"
-
-Database:
-* Firebase projekt
-* Firestore database
 
 Muu/varia:
 * Veebilehe reeglite koostamine
@@ -163,6 +186,16 @@ Tehtud
 * ~style guide (font, ikoonid, nupud, värvid jne)~
 * ~figmas stiliseeritud wireframe~
 * ~Mängu andmete kogumine (umbes 25tk lehe kohta)~
+* ~soovi lisamine~
+* ~pakkumise lisamine~
+* ~minu soovid~
+* ~minu pakkumised~
+* ~saadaval~
+* ~soovitakse~
+* ~Firebase projekt~
+* ~Firestore database~
+
+
 
 # Lingid:
 
