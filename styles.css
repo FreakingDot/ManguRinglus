@@ -639,3 +639,57 @@ label {
     display: flex;
     flex-direction: column;
 }
+
+/* carousel */
+.container {
+    position: relative;
+    margin-top: 3%;
+}
+.control {
+    list-style: none;
+}
+.control li {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.control li.prev {
+    left: 20px;
+}
+.control li.next {
+    right: 20px;
+}
+.tns-nav {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tns-nav button {
+    height: 13px;
+    width: 8px;
+    background-color: #a5a5a5;
+    border: none;
+    margin-left: 7px;
+    border-radius: 50%;
+}
+.tns-nav .tns-nav-active {
+    background-color: black;
+}
+/* .scale{
+  animation-name: scale;
+  transform-origin: center
+}
+@keyframes scale{
+  from {
+    transform: rotate(90deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+} */
+.carouselIcons{
+    width: 4em;
+}

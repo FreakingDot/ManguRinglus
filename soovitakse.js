@@ -55,3 +55,4 @@ function looSoovitakseListing(dokument, pealkiri, kirjeldus, pilt, tagid){
     const allListingsDiv = document.getElementById("soovitakseAllListingsDiv")
     allListingsDiv.appendChild(listingDivHTML)
 }
+export { loadSoovitakse };
