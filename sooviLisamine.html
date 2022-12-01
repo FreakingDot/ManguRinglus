@@ -7,8 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.js">
+    <script type="module" src="sooviLisamine.js"></script>
     <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
 </head>
 <body style="padding-top: 0">
 <!-- Siia tuleb vorm, millega saab lisada mängu. -->
@@ -17,29 +22,32 @@
 
         <div class="MinuSoovInner" style="margin-top: 2em">
             <div class="minuMangPilt" style="width: 100%; max-width: 18em"> <!-- Div for image -->
-                <img class="PakkumisedImg" src="https://i.imgur.com/aBO0qRe.png" alt="Insert IMAGE here">
-                <div>
-                    <button class="nuppLaePilt">Lae pilt mängust</button>
+                <img id = "output" class="PakkumisedImg" src="https://i.imgur.com/aBO0qRe.png" alt="Insert IMAGE here">
+                <div >
+                    <input type = "file" id="photo" accept="image/gif, image/jpeg, image/png" onchange="uploadImg();" style="display:none;">
+                    <p><label class="nuppLaePilt" for="photo" style="cursor: pointer;">Lae pilt mängust</label><p>
+                    <!--<button onclick="uploadImg();" class="nuppLaePilt"> Lae pilt mängust</button>-->
                 </div>
             </div>
 
             <div class="sooviLisamineKirjeldus">
                 <label>Mängu pealkiri
-                    <textarea class="mänguPealkiriInput" name="Pealkiri" rows="5" cols="30"></textarea>
+                    <textarea class="mänguPealkiriInput" id="pealkiri" name="Pealkiri" rows="5" cols="30"></textarea>
                 </label>
                 <label>Mängu kirjeldus
-                    <textarea class="mänguKirjeldusInput" name="Kirjeldus" rows="5" cols="30"></textarea>
+                    <textarea class="mänguKirjeldusInput" id="kirjeldus" name="Kirjeldus" rows="5" cols="30"></textarea>
                 </label>
                 <label>Enda kommentaar
-                    <textarea class="mänguPealkiriInput" name="Kommentaar" rows="5" cols="30"></textarea>
+                    <textarea class="mänguPealkiriInput" id="komentaar" name="Kommentaar" rows="5" cols="30"></textarea>
                 </label>
             </div>
         </div>
 
         <div class="sooviLisamineNupud">
             <a href="minuSoovid.html"><button class="nuppTühista">Tühista</button></a>
-            <button class="nuppLisa">Lisa</button>
+            <button class="nuppLisa" onclick ="addwishtofb();">Lisa</button>
         </div>
     </div>
+    <script src = "sooviLisamine.js"></script>
 </body>
 </html>
