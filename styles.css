@@ -86,7 +86,7 @@ p {
 
 /* All listings */
 .listingsOuter{
-    background-color: #e0e0e0;
+
 }
 .listingsInner{
     display: flex;
@@ -103,7 +103,7 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    width: 15em;
+    width: 20em;
     margin: 1em;
     position: relative;
 }
@@ -120,7 +120,9 @@ p {
     font-size: 0.8em;
 }
 .listingImage{
-    width: 15em;
+    object-fit: cover;
+    width: 20em;
+    height: 20em;
 }
 .listingText{
     font-family: 'Roboto Mono', monospace;
@@ -636,4 +638,58 @@ label {
     margin-left: 1em;
     display: flex;
     flex-direction: column;
+}
+
+/* carousel */
+.container {
+    position: relative;
+    margin-top: 3%;
+}
+.control {
+    list-style: none;
+}
+.control li {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.control li.prev {
+    left: 20px;
+}
+.control li.next {
+    right: 20px;
+}
+.tns-nav {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tns-nav button {
+    height: 13px;
+    width: 8px;
+    background-color: #a5a5a5;
+    border: none;
+    margin-left: 7px;
+    border-radius: 50%;
+}
+.tns-nav .tns-nav-active {
+    background-color: black;
+}
+/* .scale{
+  animation-name: scale;
+  transform-origin: center
+}
+@keyframes scale{
+  from {
+    transform: rotate(90deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+} */
+.carouselIcons{
+    width: 4em;
 }
