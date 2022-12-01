@@ -14,7 +14,7 @@ const database = firebase.firestore();
 loadSoovitakse();
 
 function loadSoovitakse(){
-    database.collection("pakutavadmängud")
+    database.collection("soovitudmängud")
         .onSnapshot((querySnapshot) =>{
             querySnapshot.forEach((doc) => {
                 looSoovitakseListing(doc.id, doc.data().pealkiri, doc.data().kirjeldus, doc.data().pilt, doc.data().tagid)
