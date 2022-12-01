@@ -152,7 +152,7 @@ Kõik:
 
 Eva:
 * "Viimased teated" koodimine #54
-* "Minu profiil" lehe koodmine  #63
+* "Minu profiil" lehe koodmine  #62
 
 Marliese:
 * Pakutava mängu profiili koodimine #39
