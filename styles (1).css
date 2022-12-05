@@ -1,0 +1,574 @@
+/* Stiililehe algus */
+
+/* All pages */
+body{
+    background: #FFF8F0;
+    padding-top: 10em; /*So that navbar doesnt overlap the content*/
+}
+h1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* Navigation */
+#mainLogo{
+    object-fit: cover;
+    width: 22em;
+    height: 4em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #F4D06F;
+    position: fixed;
+    /* position: inherit;*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.groupOfButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbuttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2em;
+}
+.navbuttons button{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    color: white;
+    border-radius: 0.5em;
+    border: 0;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 12em;
+}
+.mainPrimary{
+    background-color: #392F5A;
+}
+.secondPrimary{
+    background-color: #7B7491;
+}
+.chatIcon{
+    height: 4em;
+}
+.profileIcon{
+    height: 4em;
+}
+.navIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    margin: 1em;
+}
+.listingsOuter{
+    background-color: #e0e0e0;
+}
+.listingsInner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+.listing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #edf0ee;
+    padding: 1em;
+    width: 15em;
+    margin: 1em;
+    position: relative;
+}
+.listing h1{
+    font-size: 1.2em;
+}
+.listing p{
+    font-size: 0.8em;
+}
+.listingImage{
+    width: 15em;
+}
+.listingText{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    width: 100%;
+}
+.listingTags{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag{
+    background-color: #F4D06F;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+.status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+}
+.searchDiv{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+.searchBar{
+    font-family: 'Roboto Mono', monospace;
+    max-width: 40em;
+    min-width: 60%;
+    padding: 0.8em;
+    background-color: #edf0ee;
+    border-width: 0;
+    border-radius: 1em;
+}
+.searchIcon{
+    width: 1em;
+    height: 1em;
+}
+.filtersDropdown{
+    background-color: #edf0ee;
+    border-width: 0;
+    border-radius: 1em;
+    padding: 0.8em;
+    margin-left: 1em;
+}
+/* minuPakkumised.html */
+.MinuPakkumineInner{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-height: 20em;
+    padding: 1%;
+    position: relative;
+}
+
+.MinuPakkumisedConteiner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border: solid #9DD9D2 0.5em;
+    padding: 1%;
+}
+.minuTag{
+    width: max-content;
+    padding-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 0.1em;
+    font-family: "Roboto Mono", monospace;
+}
+
+.minuTags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.LiikActive {
+    background-color: #9DD9D2;
+    color: black;
+}
+
+.VanusActive {
+    background-color: #7B7491;
+    color: white;
+
+}
+.LiikInactive {
+    background-color: #BDBAC8;
+    color: black;
+}
+.VanusInactive {
+    background-color: #BDBAC8;
+    color: black;
+}
+.ArvActive {
+    background-color: #FF8811;
+    color: white;
+}
+.ArvInactive{
+    background-color: #BDBAC8;
+    color: black;
+}
+
+.Muu {
+    background-color: white;
+    color: white;
+
+}
+.minuMangPilt{
+    width: 18em;
+    margin-right: 2%;
+}
+
+.PakkumisedImg {
+    width: 100%;
+    height: auto;
+}
+
+.minuSoov {
+    max-height: 20%;
+    margin-bottom: 2%;
+    padding-bottom: 1em;
+}
+
+.minuKirjeldus {
+    width: 70em;
+    height: auto;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.minuKirjeldusTekstConteiner{
+    max-height: 9em;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 0.5em;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #000000; */
+}
+
+.minuNupud {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teadePakkumine {
+    white-space: nowrap;
+    margin: 1em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    border: none;
+    background-color: #BDBAC8;
+    font-size: 20px;
+    border-radius: 0.5em;
+    width: 15em;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.New{
+    background-color: #F4D06F;
+}
+
+.Busy {
+    background-color: #F01C1C;
+    color:white;
+}
+
+.muudaKuuludust{
+    white-space: nowrap;
+    border: none;
+    color:white;
+    background-color: #7B7491;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.addButton {
+    background-color: #FF8811;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    border-radius: 70%;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+.addButtonDiv {
+    margin-left: auto;
+    display: flex;
+    position: sticky;
+    bottom: 1em;
+    margin-right: 3%;
+    justify-content: flex-end;
+}
+
+/*minuSoovid.html*/
+.MinuSoovidConteiner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border: solid #9DD9D2 0.5em;
+    padding: 1%;
+}
+
+.teadeSoov {
+    white-space: nowrap;
+    margin: 1em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    border: none;
+    background-color: #BDBAC8;
+    font-size: 20px;
+    border-radius: 0.5em;
+    width: 15em;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Bron{
+    background-color: #F01C1C;
+    color:white;
+}
+
+.Notif {
+    background-color: #F4D06F;
+}
+
+.minuSoov {
+    max-height: 20%;
+    margin-bottom: 2%;
+    padding-bottom: 1em;
+
+}
+
+.addButtonSoov {
+    background-color: #FF8811;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    border-radius: 70%;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.muudaSoovi {
+    white-space: nowrap;
+    border: none;
+    color:white;
+    background-color: #7B7491;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.notification {
+    position: absolute;
+    right: 0px;
+    margin-left: auto;
+}
+
+.MinuSoovInner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-height: 20em;
+    padding: 1%;
+    position: relative;
+}
+
+/* Lisa_pakkumine.html */
+.LisaPakkumine{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    padding: 1%;
+    position: relative;
+    border: solid #9DD9D2 0.5em;
+}
+.itemPic{
+    width: 30%;
+    margin-right: 2%;
+}
+.item1{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -200px;
+}
+
+#lisapakkumine_top{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: auto;
+    grid-gap: 30px 20px;
+}
+
+#lisapakkumine_image_insertboxes{
+    display: grid;
+    grid-template-columns: 5% 35% 55% 5%;
+    grid-gap: 500px 80px
+}
+
+
+.lisapakkumineButton {
+    white-space: nowrap;
+    margin: 1em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    border: none;
+    background-color: #7B7491;
+    font-size: 20px;
+    border-radius: 0.5em;
+    width: 15em;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lisapakkumine_textarea{
+    width: 300px;
+    height: 1500px
+}
+.lisapakkumine_textbox{
+    width: 300px;
+    height: 150px
+}
+
+.lisapakkumineImg {
+    width: 80%;
+    height: auto
+}
+
+.lisapakkumineNupud {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lisapakkumine_lisa {
+    white-space: nowrap;
+    margin: 1em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    border: none;
+    background-color: #9DD9D2;
+    font-size: 20px;
+    border-radius: 0.5em;
+    width: 15em;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    cursor: pointer;
+
+}
+.lisapakkumine_tyhista{
+    white-space: nowrap;
+    border: none;
+    color:white;
+    background-color: #BDBAC8;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.minu_profiil_grid {
+    display: grid;
+    grid-template-columns: 10% 25% 30% 20% 15%;
+    grid-gap: 60px 20px
+}
+
+.center_content {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.rounded-corners {
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    vertical-align: center;
+}
+
+.teated_grid {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: auto;
+    grid-gap: 10px 10px;
+    border: 3px solid #9DD9D2;
+    margin-left: 200px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+m {
+    font-size: 15px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.viimased_teated {
+    margin-left: 200px;
+}

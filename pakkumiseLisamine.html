@@ -6,45 +6,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles%20(1).css">
+    <script type="module" src="minuPakkumiseLisamine.js"></script>
     <link rel="script" href="script.js">
-    <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
+    <link rel="shortcut icon" type="image/svg" href="pictures/logo_tab.svg">
 </head>
 <body>
-<!-- Siia tuleb vorm, mille ära täitmisel lisandub uus pakkumine. -->
-<div class="lisapakkumine_image_insertboxes">
+<div id="lisapakkumine_image_insertboxes">
     <div></div>
     <h1>Pakkumise lisamine</h1>
 </div>
 <!-- Siia tuleb mängu pilt ja kirjelduse vormid. -->
-<div class="lisapakkumine_image_insertboxes">
+<div id="lisapakkumine_image_insertboxes">
     <div></div>
     <div>
-        <img class = "lisapakkumineImg" src="https://i.imgur.com/aBO0qRe.png">
+        <div class="text-center">
+            <img class="lisapakkumineImg" src="https://i.imgur.com/aBO0qRe.png">
+        </div>
         <div class="text-center">
             <button class="lisapakkumineButton">Lae pilt mängust</button>
         </div>
     </div>
     <form>
-        <label for="mängu pealkiri"><h3>Mängu pealkiri:</h3></label><br>
-        <textarea name="textarea" rows="1" cols="40"></textarea>
-        <label for="mängu kirjeldus"><h3>Mängu kirjeldus:</h3></label><br>
-        <textarea name="textarea" rows="5" cols="40">Kirjelda mängu...</textarea>
-        <label for="enda kommentaar"><h3>Enda kommentaar:</h3></label><br>
-        <textarea name="textarea" rows="5" cols="40">Kirjelda mängu seisukorda...</textarea>
+        <label for="mängu pealkiri"><h3>Mängu pealkiri:</h3></label>
+        <textarea name="textarea" rows="1" cols="60"></textarea>
+        <label for="mängu kirjeldus"><h3>Mängu kirjeldus:</h3></label>
+        <textarea name="textarea" rows="5" cols="60">Kirjelda mängu...</textarea>
+        <label for="enda kommentaar"><h3>Enda kommentaar:</h3></label>
+        <textarea name="textarea" rows="5" cols="60">Kirjelda mängu seisukorda...</textarea>
     </form>
 </div>
 <!-- Siia tulevad tigimused(Müün, Vahetan..) ja filtrite tag-id. -->
-<div class="lisapakkumine_image_insertboxes">
+<div id="lisapakkumine_image_insertboxes">
     <div></div>
     <div>
         <h3>Tingimused:</h3>
         <form>
             <p>
                 <input type="checkbox" name="Müün" value="Müün" checked> Müün <br>
-            <p< Hind </p> <input type="text" name="Hind"> <br>
-            <input type="checkbox" name="Vahetan" value=Vahetan"> Vahetan <br>
-            <input type="checkbox" name="Tasuta" value="Tasuta"> Tasuta <br>
+            <p> Hind </p> <input type="text" name="Hind"> <br>
+            <p><input type="checkbox" name="Vahetan" value=Vahetan"> Vahetan <br>
+                <input type="checkbox" name="Tasuta" value="Tasuta"> Tasuta <br>
             </p>
         </form>
     </div>
@@ -52,49 +54,111 @@
         <h3>Filtrite lisamine:</h3>
         <p> Mängu liik </p>
         <div class = "minuTags"> <!-- tags -->
-            <div class = "minuTag Liik">
+            <div onclick="ChangeToActiveLiik(this.id)" id="Lauamäng" class = "minuTag LiikActive">
                 <span>Lauamäng</span>
             </div>
-            <div class = "minuTag Liik">
+            <div onclick="ChangeToActiveLiik(this.id)" id="Kaardimäng" class = "minuTag LiikInactive">
                 <span>Kaardimäng</span>
             </div>
-            <div class = "minuTag Liik">
-                <span>Videomäng</span><br>
+            <div onclick="ChangeToActiveLiik(this.id)" id="Videomäng" class = "minuTag LiikInactive">
+                <span>Videomäng</span>
+            </div>
+            <div onclick="ChangeToActiveLiik(this.id)" id="Pusle" class = "minuTag LiikInactive">
+                <span>Pusle</span><br>
             </div>
         </div>
-        <p> Vanus </p><br>
-        <div class = "minuTags">
-            <div class = "minuTag Vanus">
+        <p> Vanusepiirang </p>
+        <div class="minuTags">
+            <div id="3+" class = "minuTag VanusActive" onclick="ChangeToActiveVanus(this.id)">
                 <span>3+</span>
             </div>
-            <div class = "minuTag Vanus">
+            <div id="6+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
                 <span>6+</span>
             </div>
-            <div class = "minuTag Vanus">
-                <span>10+</span>
+            <div id="8+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
+                <span>8+</span>
             </div>
-            <div class = "minuTag Vanus">
+            <div id="12+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
+                <span>12+</span>
+            </div>
+            <div id="16+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
+                <span>16+</span>
+            </div>
+            <div id="18+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
                 <span>18+</span>
             </div>
         </div>
+        <p> Mängijate arv</p>
+        <div class="minuTags">
+            <div id="1player" onclick="ChangeToActivePlayers(this.id)" class="minuTag ArvActive">
+                <span>1 mängija</span>
+            </div>
+            <div id="1-2player" onclick="ChangeToActivePlayers(this.id)"  class="minuTag ArvInactive">
+                <span>1-2 mängijat</span>
+            </div>
+            <div id="2-4player" onclick="ChangeToActivePlayers(this.id)"  class="minuTag ArvInactive">
+                <span>2-4 mängijat</span>
+            </div>
+            <div id="1-4player" onclick="ChangeToActivePlayers(this.id)"  class="minuTag ArvInactive">
+                <span>1-4 mängijat</span>
+            </div>
+        </div>
     </div>
 </div>
 
-
-<div class="lisapakkumine_image_insertboxes">
+<div id="lisapakkumine_image_insertboxes">
     <div></div>
     <div></div>
     <div>
-        <div class="minuNupud">
-        <div>
-            <button class="teadePakkumine">Lisa</button>
-        </div>
-        <div>
-            <a href="minuPakkumised.html"><button class="muudaKuuludust" >Tühista</button></a>
-        </div>
+        <div class="lisapakkumineNupud">
+            <div>
+                <br>
+                <br>
+                <div class="text-center">
+                    <button class="lisapakkumine_lisa">Lisa</button>
+                </div>
+            </div>
+            <div>
+                <div class="text-center">
+                    <a href="minuPakkumised.html"><button class="lisapakkumine_tyhista">Tühista</button></a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
 </body>
+<script>
+    function ChangeToActiveLiik(clickedId){
+        const Active = document.getElementsByClassName("minuTag LiikActive")[0];
+        const newActive = document.getElementById(clickedId);
+        Active.classList.remove("LiikActive")
+        Active.classList.add("LiikInactive")
+        newActive.classList.remove("LiikInactive")
+        newActive.classList.add("LiikActive")
+
+    }
+    function ChangeToActiveVanus(clickedID){
+        const Active = document.getElementsByClassName("minuTag VanusActive")[0]
+        const newActive = document.getElementById(clickedID)
+        Active.classList.remove("VanusActive")
+        Active.classList.add("VanusInactive")
+        newActive.classList.remove("VanusInactive")
+        newActive.classList.add("VanusActive")
+    }
+    function ChangeToActivePlayers(clickedid){
+        const Active = document.getElementsByClassName("minuTag ArvActive")[0]
+        const newActive = document.getElementById(clickedid)
+
+        Active.classList.remove("ArvActive")
+        Active.classList.add("ArvInactive")
+        newActive.classList.remove("ArvInactive")
+        newActive.classList.add("ArvActive")
+
+    }
+    function addToFirebase(){
+        const form =document.getElementById("form")
+        const formData = new FormData(form);
+
+        console.log(formData)
+    }
+</script>
 </html>
