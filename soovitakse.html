@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="soovitakse.js"></script>
+    <script src="soovitakseScript.js"></script>
     <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
@@ -40,7 +41,7 @@
 
     <div class="listingsOuter">
         <div class="searchDiv">
-            <input class="searchBar" type="text" placeholder="Otsing...">
+            <input class="searchBar" type="text" placeholder="Otsing..." autocomplete="off" onkeyup="searchListing()" id="soovitudSearchInput">
         </div>
 
         <div class="listingsInner" id="soovitakseAllListingsDiv">
