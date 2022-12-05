@@ -678,18 +678,6 @@ label {
 .tns-nav .tns-nav-active {
     background-color: black;
 }
-/* .scale{
-  animation-name: scale;
-  transform-origin: center
-}
-@keyframes scale{
-  from {
-    transform: rotate(90deg);
-  }
-  to{
-    transform: rotate(0deg);
-  }
-} */
 .carouselIcons{
     width: 4em;
 }
