@@ -454,6 +454,20 @@ p {
     grid-template-columns: 5% 35% 55% 5%;
     grid-gap: 500px 80px
 }
+#lisapakkumine_image_insertboxes2{
+    display: grid;
+    grid-template-columns: 5% 35% 55% 5%;
+    grid-gap: 500px 80px
+}#lisapakkumine_image_insertboxes3{
+    display: grid;
+    grid-template-columns: 5% 35% 55% 5%;
+    grid-gap: 500px 80px
+}
+#lisapakkumine_image_insertboxes4{
+    display: grid;
+    grid-template-columns: 5% 35% 55% 5%;
+    grid-gap: 500px 80px
+}
 
 
 .lisapakkumineButton {
