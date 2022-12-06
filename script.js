@@ -144,10 +144,7 @@ function looSoovitakseListing(dokument, pealkiri, kirjeldus, pilt, tagid){
 
 setTimeout(function() { activateSlider1(); }, 1000)
 setTimeout(function() { activateSlider2(); }, 1000)
-//import { loadSaadaval } from './saadaval.js'
-//loadSaadaval()
-//import { loadSoovitakse } from './soovitakse.js'
-//loadSoovitakse()
+
 function activateSlider1() {
 
     const slider1 = tns({
@@ -167,20 +164,13 @@ function activateSlider1() {
                 nav: false
             },
             768: {
-                items: 2,
+                items: 3,
                 nav: true
             },
             1440: {
-                items: 3
+                items: 4
             }
         }
-        // mode: 'gallery',
-        // speed: 2000,
-        // animateIn: "scale",
-        // controls: false,
-        // nav: false,
-        // edgePadding: 20,
-        // loop: false,
     });
 }
 function activateSlider2() {
@@ -190,6 +180,7 @@ function activateSlider2() {
         items: 3,
         gutter: 20,
         slideBy: 1,
+
         controlsPosition: "bottom",
         navPosition: "bottom",
         mouseDrag: true,
@@ -202,19 +193,12 @@ function activateSlider2() {
                 nav: false
             },
             768: {
-                items: 2,
+                items: 3,
                 nav: true
             },
             1440: {
-                items: 3
+                items: 4
             }
         }
-        // mode: 'gallery',
-        // speed: 2000,
-        // animateIn: "scale",
-        // controls: false,
-        // nav: false,
-        // edgePadding: 20,
-        // loop: false,
     });
 }

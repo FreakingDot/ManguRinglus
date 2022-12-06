@@ -95,4 +95,3 @@ function looSaadavalListing(dokument, pealkiri, kirjeldus, pilt, tagid){
     const allListingsDiv = document.getElementById("saadavalAllListingsDiv")
     allListingsDiv.appendChild(listingDivHTML)
 }
-export { loadSaadaval };
