@@ -772,7 +772,7 @@ hr {
     display: flex;
     flex-direction: row;
     margin-top: 0;
-    margin-bottom: 5%
+    margin-bottom: 5%;
 }
 
 .minu_profiil_grid {
@@ -822,4 +822,14 @@ m {
     display: flex;
     flex-direction: column;
     margin-top: -1em;
+}
+
+/*pakutavaMänguProfiil.html*/
+.ostaVahetaNupud {
+    margin-top: -8%;
+    margin-right: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    white-space: nowrap;
 }
