@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Lisa pakkumine</title>
+    <title>Soovi lisamine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles%20(1).css">
+    <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="script" href="script.js">
     <link rel="shortcut icon" type="image/svg" href="pictures/logo_tab.svg">
@@ -16,65 +18,86 @@
     <h1>Pakkumise lisamine</h1>
 </div>
 <!-- Siia tuleb mängu pilt ja kirjelduse vormid. -->
-<div id="lisapakkumine_image_insertboxes">
+<div id="lisapakkumine_image_insertboxes2">
     <div></div>
     <div>
         <div class="text-center">
-            <img class="lisapakkumineImg" src="https://i.imgur.com/aBO0qRe.png">
+            <img id="piltHere" class="lisapakkumineImg" src="https://i.imgur.com/aBO0qRe.png" alt="idk">
         </div>
         <div class="text-center">
-            <button class="lisapakkumineButton">Lae pilt mängust</button>
+            <input type = "file" id="pilt" accept="image/gif, image/jpeg, image/png" onchange="uploadImg();" style="display:none;">
+            <p><label class="lisapakkumineButton" for="pilt" style="cursor: pointer;">Lae pilt mängust</label><p>
         </div>
     </div>
     <form>
-        <label for="mängu pealkiri"><h3>Mängu pealkiri:</h3></label>
-        <textarea name="textarea" rows="1" cols="60"></textarea>
-        <label for="mängu kirjeldus"><h3>Mängu kirjeldus:</h3></label>
-        <textarea name="textarea" rows="5" cols="60">Kirjelda mängu...</textarea>
-        <label for="enda kommentaar"><h3>Enda kommentaar:</h3></label>
-        <textarea name="textarea" rows="5" cols="60">Kirjelda mängu seisukorda...</textarea>
+        <label><h3>Mängu pealkiri:</h3>
+        <textarea id="title" name="textarea" rows="1" cols="60" placeholder="Mängu pealkiri..."></textarea>
+        </label>
+        <label><h3>Mängu kirjeldus:</h3>
+        <textarea id="gamedescription" name="textarea" rows="5" cols="60" placeholder="Kirjelda mängu..."></textarea>
+        </label>
+        <label><h3>Enda kommentaar:</h3>
+        <textarea id="gamecomment" name="textarea" rows="5" cols="60" placeholder="Kirjelda mängu seisukorda..."></textarea>
+        </label>
     </form>
 </div>
 <!-- Siia tulevad tigimused(Müün, Vahetan..) ja filtrite tag-id. -->
-<div id="lisapakkumine_image_insertboxes">
+<div id="lisapakkumine_image_insertboxes3">
     <div></div>
     <div>
         <h3>Tingimused:</h3>
         <form>
             <p>
-                <input type="checkbox" name="Müün" value="Müün" checked> Müün <br>
-            <p> Hind </p> <input type="text" name="Hind"> <br>
-            <p><input type="checkbox" name="Vahetan" value=Vahetan"> Vahetan <br>
-                <input type="checkbox" name="Tasuta" value="Tasuta"> Tasuta <br>
+                <label>
+                    <input type="checkbox" id="checkbocMyyn" name="Müün" value="Müün" class="CheckBox" checked>
+                </label> Müün <br>
+            <p> Hind </p> <label>
+            <input id="hindhind" type="text" name="Hind">
+        </label> <br>
+            <p><label>
+                <input type="checkbox" id="checkboxVahetan"  name="Vahetan" value=Vahetan">
+            </label> Vahetan <br>
+                <label>
+                    <input type="checkbox" id="checkbocTasuta" class="CheckBox"  name="Tasuta" value="Tasuta">
+                </label> Tasuta <br>
             </p>
         </form>
     </div>
     <div>
         <h3>Filtrite lisamine:</h3>
         <p> Mängu liik </p>
-        <div class="minuTags"> <!-- tags -->
-            <div class="minuTag Liik">
+        <div class = "minuTags"> <!-- tags -->
+            <div onclick="ChangeToActiveLiik(this.id)" id="Lauamäng" class = "minuTag LiikActive">
                 <span>Lauamäng</span>
             </div>
-            <div class="minuTag Liik">
+            <div onclick="ChangeToActiveLiik(this.id)" id="Kaardimäng" class = "minuTag LiikInactive">
                 <span>Kaardimäng</span>
             </div>
-            <div class="minuTag Liik">
-                <span>Videomäng</span><br>
+            <div onclick="ChangeToActiveLiik(this.id)" id="Videomäng" class = "minuTag LiikInactive">
+                <span>Videomäng</span>
+            </div>
+            <div onclick="ChangeToActiveLiik(this.id)" id="Pusle" class = "minuTag LiikInactive">
+                <span>Pusle</span>
             </div>
         </div>
         <p> Vanusepiirang </p>
         <div class="minuTags">
-            <div class="minuTag Vanus">
+            <div id="3+" class = "minuTag VanusActive" onclick="ChangeToActiveVanus(this.id)">
                 <span>3+</span>
             </div>
-            <div class="minuTag Vanus">
+            <div id="6+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
                 <span>6+</span>
             </div>
-            <div class="minuTag Vanus">
-                <span>10+</span>
+            <div id="8+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
+                <span>8+</span>
             </div>
-            <div class="minuTag Vanus">
+            <div id="12+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
+                <span>12+</span>
+            </div>
+            <div id="16+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
+                <span>16+</span>
+            </div>
+            <div id="18+" class = "minuTag VanusInactive" onclick="ChangeToActiveVanus(this.id)">
                 <span>18+</span>
             </div>
         </div>
@@ -95,8 +118,7 @@
         </div>
     </div>
 </div>
-
-<div id="lisapakkumine_image_insertboxes">
+<div id="lisapakkumine_image_insertboxes4">
     <div></div>
     <div></div>
     <div>
@@ -105,15 +127,124 @@
                 <br>
                 <br>
                 <div class="text-center">
-                    <button class="lisapakkumine_lisa">Lisa</button>
+                    <button onclick="addToFbPakkumine()" class="lisapakkumine_lisa">Lisa</button>
                 </div>
             </div>
             <div>
                 <div class="text-center">
-                    <button class="lisapakkumine_tyhista">Tühista</button>
+                    <a href="minuPakkumised.html"><button class="lisapakkumine_tyhista">Tühista</button></a>
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< pakkumiseLisamine.html
+</div>
 </body>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDaaTmL8l857bvP32DCQYU0-zG-z2Hv2x8",
+        authDomain: "manguringlus.firebaseapp.com",
+        projectId: "manguringlus",
+        storageBucket: "manguringlus.appspot.com",
+        messagingSenderId: "570464946806",
+        appId: "1:570464946806:web:3813b5c7a72ad00a5a2d57",
+        measurementId: "G-Q88BY8F2X9"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.firestore();
+
+    function uploadImg(){
+        const ref = firebase.storage().ref()
+        const gotten_pic = document.querySelector("#pilt").files[0]
+        console.log(gotten_pic)
+
+        const name = new Date() + "-" + gotten_pic.name
+
+        const metadata = {
+            contentType: gotten_pic.type
+        }
+
+        const task = ref.child(name).put(gotten_pic, metadata)
+
+        task
+            .then(snapshot => snapshot.ref.getDownloadURL())
+            .then(url =>{
+                console.log(url)
+                const imgUpload = document.getElementById("piltHere")
+                imgUpload.src = url
+            })
+    }
+
+    function ChangeToActiveLiik(clickedId){
+        const Active = document.getElementsByClassName("minuTag LiikActive")[0];
+        const newActive = document.getElementById(clickedId);
+        Active.classList.remove("LiikActive")
+        Active.classList.add("LiikInactive")
+        newActive.classList.remove("LiikInactive")
+        newActive.classList.add("LiikActive")
+
+    }
+    function ChangeToActiveVanus(clickedID){
+        const Active = document.getElementsByClassName("minuTag VanusActive")[0]
+        const newActive = document.getElementById(clickedID)
+        Active.classList.remove("VanusActive")
+        Active.classList.add("VanusInactive")
+        newActive.classList.remove("VanusInactive")
+        newActive.classList.add("VanusActive")
+    }
+    function ChangeToActivePlayers(clickedid){
+        const Active = document.getElementsByClassName("minuTag ArvActive")[0]
+        const newActive = document.getElementById(clickedid)
+
+        Active.classList.remove("ArvActive")
+        Active.classList.add("ArvInactive")
+        newActive.classList.remove("ArvInactive")
+        newActive.classList.add("ArvActive")
+
+    }
+
+    function addToFbPakkumine(){
+        const title = document.getElementById("title").value
+        const description = document.getElementById("gamedescription").value
+        const comment = document.getElementById("gamecomment").value
+        const liik = document.getElementsByClassName("LiikActive")[0].children[0].innerHTML
+        const vanus = document.getElementsByClassName("VanusActive")[0].children[0].innerHTML
+        const players = document.getElementsByClassName("ArvActive")[0].children[0].innerHTML
+        const tagid = {
+            "liik": liik,
+            "mängijate arv": players,
+            "vanusepiirang":vanus
+        }
+        const myyn =document.getElementById("checkbocMyyn")
+        const vahetan = document.getElementById("checkboxVahetan")
+        const tasuta = document.getElementById("checkbocTasuta")
+        const pilt = document.getElementById("piltHere").src
+
+        console.log(title)
+        console.log(description)
+        console.log(comment)
+        console.log(liik)
+        console.log(vanus)
+        console.log(players)
+        console.log(tagid)
+
+        const pakkumiseData = {
+            "hind": document.getElementById("hindhind").value,
+            "kirjeldus": description,
+            "pealkiri": title,
+            "tagid": tagid,
+            "myyn": myyn.checked,
+            "vahetan": vahetan.checked,
+            "tasuta": tasuta.checked,
+            "pilt":pilt,
+            "enda kommentaar": comment
+        }
+
+        database.collection("pakutavadmängud").add(pakkumiseData).then(() => {
+            console.log("uploaded.")
+            window.location="minuPakkumised.html"
+        })
+    }
+</script>
 </html>
