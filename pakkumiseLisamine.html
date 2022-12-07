@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles%20(1).css">
     <link rel="shortcut icon" type="image/svg" href = "pictures/logo_tab.svg">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.js">
-    <link rel="shortcut icon" type="image/svg" href="pictures/logo_tab.svg">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
 </head>
 <body>
 <div id="lisapakkumine_image_insertboxes">
@@ -103,21 +105,22 @@
         </div>
         <p> Mängijate arv</p>
         <div class="minuTags">
-            <div class="minuTag Arv">
+            <div id="1player" onclick="ChangeToActivePlayers(this.id)" class="minuTag ArvActive">
                 <span>1 mängija</span>
             </div>
-            <div class="minuTag Arv">
+            <div id="1-2player" onclick="ChangeToActivePlayers(this.id)"  class="minuTag ArvInactive">
                 <span>1-2 mängijat</span>
             </div>
-            <div class="minuTag Arv">
+            <div id="2-4player" onclick="ChangeToActivePlayers(this.id)"  class="minuTag ArvInactive">
                 <span>2-4 mängijat</span>
             </div>
-            <div class="minuTag Arv">
+            <div id="1-4player" onclick="ChangeToActivePlayers(this.id)"  class="minuTag ArvInactive">
                 <span>1-4 mängijat</span>
             </div>
         </div>
     </div>
 </div>
+
 <div id="lisapakkumine_image_insertboxes4">
     <div></div>
     <div></div>
