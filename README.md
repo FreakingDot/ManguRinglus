@@ -171,17 +171,13 @@ Karol:
 ### mida on vaja teha?
 
 Vahelehed (HTML, CSS, JavaScript):
-* avaleht
-* minu profiil
 * muuda minu profiili
-* mängu profiil 
 * "vestlus/pakkumise tegemine/vahetuse kinnitamine"
-* "viimased teated"
 
 Muu/varia:
 * Veebilehe reeglite koostamine
 
-Tehtud
+Tehtud:
 * ~logo~
 * ~style guide (font, ikoonid, nupud, värvid jne)~
 * ~figmas stiliseeritud wireframe~
@@ -194,6 +190,10 @@ Tehtud
 * ~soovitakse~
 * ~Firebase projekt~
 * ~Firestore database~
+* ~avaleht~
+* ~minu profiil~
+* ~mängu profiil~
+* ~"viimased teated"~
 
 
 
