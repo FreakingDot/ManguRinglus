@@ -42,3 +42,7 @@ function saveFilterOption() {
     console.log("filter")
     option = document.getElementById('saadavalFilters').value
 }
+
+function OpenGame(gameID) {
+    window.location = "pakutavaMänguProfiil.html"
+}

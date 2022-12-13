@@ -13,3 +13,8 @@ function searchListing() {
         }
     }
 }
+
+function openPage(){
+    console.log("hello!")
+    window.location = "soovitavaMänguProfiil.html"
+}

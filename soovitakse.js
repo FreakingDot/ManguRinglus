@@ -28,6 +28,7 @@ function looSoovitakseListing(dokument, pealkiri, kirjeldus, pilt, tagid){
     //make listing div
     const listingDivHTML=document.createElement("div");
     listingDivHTML.classList.add("listing");
+    listingDivHTML.setAttribute("onclick", "openPage();")
 
     //make listing status icon
     const listingStatusIconHTML=document.createElement("img");

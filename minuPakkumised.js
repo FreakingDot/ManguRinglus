@@ -35,7 +35,7 @@ function looPakkumine(dokument, pealkiri, kirjeldus, pilt, tagid){
     const itemdivinnerHTML = document.createElement("div");
     itemdivinnerHTML.classList.add("MinuPakkumineInner");
     itemdivinnerHTML.id = dokument
-    itemdivinnerHTML.setAttribute("onclick", "get_id(});")
+    itemdivinnerHTML.setAttribute("onclick", "get_id(this.id);")
 
     // img div
     const imagedivHTML = document.createElement("div");

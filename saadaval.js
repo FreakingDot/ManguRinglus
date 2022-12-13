@@ -23,11 +23,14 @@ function loadSaadaval(){
         });
 }
 
+
 function looSaadavalListing(dokument, pealkiri, kirjeldus, pilt, tagid){
 
     //make listing div
     const listingDivHTML=document.createElement("div");
     listingDivHTML.classList.add("listing");
+    listingDivHTML.setAttribute("onclick", "OpenGame(this.id);")
+    listingDivHTML.id = dokument
 
     //make listing status icon
     const listingStatusIconHTML=document.createElement("img");
